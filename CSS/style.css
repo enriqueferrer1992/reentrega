@@ -1,0 +1,282 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(98, 133, 189);
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    background-color: white;
+
+}
+
+.gale{
+    margin-top: 30px;
+}
+.gal1{
+    width: 80%;
+    height: 600px;
+}
+
+.carousel-control-prev{
+    background-color: black;
+}
+
+.carousel-control-next{
+    background-color: black;
+}
+
+h1 {
+    padding: 40px;
+    margin: 80px 40px 80px 40;
+    border: 10px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logos__head {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.logo__head {
+    padding: 10px;
+}
+
+.social__media {
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    width: 40px;
+    height: 30px;
+}
+
+footer {
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 1.5em;
+    background-color: rgb(98, 133, 189);
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Declaro nombre de las áreas para la grilla de productos.html */
+
+.header__prod {
+    grid-area: header__prod;
+}
+
+.prod__grid {
+    grid-area: prod__grid;
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+.envoltura__productos {
+    margin-bottom: 1.5em;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+        "header__prod"
+        "prod__grid"
+        "footer";
+}
+
+.prod {
+    background-color: goldenrod;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.productos {
+    width: 300px;
+    height: 250px;
+    border: 8px solid black;
+    margin-top: 15px;
+
+}
+
+.quienes__somos {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: left;
+}
+
+.quienes__ {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto__quienes {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    border: 10px solid black;
+    background-color: white;
+}
+
+.galeria__pic {
+    height: 100%;
+    width: 50%;
+    padding-top: 30px;
+}
+
+/* Declaro area de grilla para index.html */
+
+.header__index {
+    grid-area: header__index;
+}
+
+.contenido__index {
+    grid-area: contenido__index;
+}
+
+.contenido__grid {
+    grid-area: contenido__grid;
+}
+
+.envoltura__index {
+    margin-bottom: 1.5em;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+        "header__index"
+        "contenido__index"
+        "contenido__grid"
+        "footer";
+}
+
+.pic__principal {
+    width: 100%;
+
+}
+
+.camiseta__arg {
+    display: flex;
+    justify-content: end;
+}
+
+.texto__arg {
+    border: 10px solid black;
+    background-color: white;
+    width: 50%;
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.casaca {
+    width: 50%;
+
+}
+
+
+
+@media (min-width:600px) {
+
+    .prod {
+        background-color: goldenrod;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .texto__arg {
+
+        font-size: 5vw;
+
+    }
+}
+
+@media (min-width:1200px) {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    header {
+        background-color: rgb(98, 133, 189);
+        padding: 50px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .prod {
+        background-color: goldenrod;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .productos:hover {
+        transform: scale(1.1);
+    }
+
+    .productos {
+        width: 350px;
+        height: 300px;
+        transition-property: all;
+        transition-duration: 3s;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto__arg {
+
+        font-size: 5vw;
+
+    }
+
+}
